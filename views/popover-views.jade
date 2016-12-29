@@ -1,0 +1,15 @@
+div(data-reactroot='')
+  .pop-over-header.js-pop-over-header
+    span.pop-over-header-title #{views.title}
+    a.pop-over-header-close-btn.icon-sm.icon-close(href='#')
+  div
+    .pop-over-content.js-pop-over-content.u-fancy-scrollbar.js-tab-parent(style='max-height: 384px;')
+      div
+        ul.pop-over-list
+          each option in views.options
+            li
+              a.js-select.light-hover(href='#', name=option.id)
+                span.icon-sm.vis-icon.icon-private
+                | #{option.name}
+                span.sub-name
+                  | #{option.description}

@@ -1,0 +1,48 @@
+{
+  "name": "clever-trello",
+  "version": "0.9.0",
+  "author": "Vitaliy Stoliarov <HuCCaH@gmail.com>",
+  "dependencies": {
+    "babel-plugin-transform-flow-strip-types": "*",
+    "babel-preset-es2015": "*",
+    "babel-plugin-typecheck": "*",
+    "gulp": "~3.9.0",
+    "gulp-babel": "~6.1.2",
+    "gulp-uglify": "*",
+    "gulp-jade": "*",
+    "gulp-image-optimization": "*",
+    "gulp-cssnano": "*",
+    "gulp-concat": "*",
+    "gulp-eslint": "^3.0.0"
+  },
+  "license": "GPL-3.0",
+  "devDependencies": {},
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "typecheck",
+      "syntax-flow",
+      "transform-flow-strip-types"
+    ]
+  },
+  "description": "browser extension",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ni55aN/Clever-Trello.git"
+  },
+  "keywords": [
+    "trello",
+    "teamwork",
+    "project management"
+  ],
+  "bugs": {
+    "url": "https://github.com/Ni55aN/Clever-Trello/issues"
+  },
+  "homepage": "https://github.com/Ni55aN/Clever-Trello#readme"
+}

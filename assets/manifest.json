@@ -1,0 +1,43 @@
+﻿{
+	"manifest_version": 2,
+	"name": "Clever Trello",
+	"version": "0.9.0",
+	"description": "Clever Trello это расширение, которое добавляет новые и полезные функции в Trello.com",
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"icons":{
+		"32":"icons/icon_32.png",
+		"48":"icons/icon_128.png",
+		"128":"icons/icon_128.png"
+	},
+
+
+	"permissions": [
+		"tabs",
+		"https://trello.com/*"
+	],
+	"browser_action": {
+		"default_icon": "icons/icon_32.png",
+		"default_title": "Clever Trello",
+		"_default_popup": "popup.html"
+	},
+	 "web_accessible_resources": [
+		"https://ssl.google-analytics.com/ga.js",
+		"views/*.html",
+		"icons/*",
+		"fonts/*"
+	 ],
+	 "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+	 "content_scripts": [
+		{
+			"matches": ["https://trello.com/*"],
+			"js": ["jquery-1.7.1.min.js","client.js","Chart.min.js","Clever.js"],
+			"css":["style.css"],
+			"run_at":"document_start"
+		}
+	]
+
+
+}

@@ -1,0 +1,21 @@
+{
+  "views":{
+    "title":"Change view",
+    "options":[
+        {"id":"DEFAULT",  "name":"Default",     "description":""},
+        {"id":"DIAGRAM",  "name":"Diagram",     "description":""},
+        {"id":"GANTT",    "name":"Gantt chart", "description":""},
+        {"id":"REPORT",   "name":"Report",      "description":""}
+    ]
+
+  },
+  "calendar":{
+    "title":"Calendar"
+  },
+  "auth":{
+    "title":"Authorization",
+    "button":"Authorize"
+  },
+  "test":5675675,
+  "list":[6,3,9,77,34,234,67]
+}

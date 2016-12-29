@@ -1,0 +1,41 @@
+div(data-reactroot='')
+    .pop-over-header.js-pop-over-header
+        span.pop-over-header-title #{views.title}
+        a.pop-over-header-close-btn.icon-sm.icon-close(href='#')
+    div(data-reactid='')
+        .pop-over-content.js-pop-over-content.u-fancy-scrollbar.js-tab-parent(data-reactid='', style='max-height: 548px;')
+            div(data-reactid='.4.1.0.$view984')
+                form.dpicker-widget.u-clearfix
+                    .datepicker-select.u-clearfix
+                        .datepicker-select-date
+                            label.datepicker-select-label
+                                | Date
+                                input.datepicker-select-input.js-dpicker-date-input.js-autofocus(type='text', placeholder='Enter date', tabindex='101')
+                        .datepicker-select-time
+                            label.datepicker-select-label
+                                | Time
+                                input.datepicker-select-input.js-dpicker-time-input(type='text', placeholder='Enter time', tabindex='102')
+                    .pickers.js-dpicker-cal
+                        .pika-single
+                            .pika-lendar
+                                .pika-title
+                                table.pika-table(cellpadding='0', cellspacing='0')
+                                    thead
+                                        tr
+                                            th(scope='col')
+                                                abbr(title='Monday') Mo
+                                            th(scope='col')
+                                                abbr(title='Tuesday') Tu
+                                            th(scope='col')
+                                                abbr(title='Wednesday') We
+                                            th(scope='col')
+                                                abbr(title='Thursday') Th
+                                            th(scope='col')
+                                                abbr(title='Friday') Fr
+                                            th(scope='col')
+                                                abbr(title='Saturday') Sa
+                                            th(scope='col')
+                                                abbr(title='Sunday') Su
+                    .datepicker-confirm-btns
+                        input.primary.wide.confirm(type='submit', value='Save', tabindex='103')
+                        button.negate.remove-date.js-remove-date(type='button', tabindex='104') Remove

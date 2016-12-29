@@ -1,0 +1,11 @@
+.list-card.js-member-droppable.diagram-card.dark(data-card-index='@{scope.index}')
+  .board-info(style='background-color: @{scope.board.prefs.backgroundColor}; background-image: url(@{scope.board.prefs.backgroundImageScaled ? scope.board.prefs.backgroundImageScaled[2].url : scope.board.prefs.backgroundImage})')  @{scope.board.name}
+  .list-card-cover.js-card-cover
+  span.icon-sm.icon-external-link.list-card-operation.dark-hover.js-open-quick-card-editor.js-card-menu
+  .list-card-stickers-area.hide
+    .stickers.js-card-stickers
+  .list-card-details
+    .list-card-labels.js-card-labels
+    a.list-card-title.js-card-name(dir='auto')
+      span.card-short-id.hide #2
+      |  @{scope.card.name}
