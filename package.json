@@ -3,20 +3,24 @@
   "version": "0.9.0",
   "author": "Vitaliy Stoliarov <HuCCaH@gmail.com>",
   "dependencies": {
-    "babel-plugin-transform-flow-strip-types": "*",
-    "babel-preset-es2015": "*",
-    "babel-plugin-typecheck": "*",
     "gulp": "~3.9.0",
-    "gulp-babel": "~6.1.2",
     "gulp-uglify": "*",
     "gulp-jade": "*",
-    "gulp-image-optimization": "*",
+    "gulp-postcss": "*",
+    "postcss-nested": "*",
+    "sugarss": "*",
+    "gulp-rename": "*",
     "gulp-cssnano": "*",
     "gulp-concat": "*",
-    "gulp-eslint": "^3.0.0"
+    "gulp-eslint": "^3.0.0",
+	"gulp-imagemin": "*"
   },
   "license": "GPL-3.0",
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^2.1.4",
+    "gulp-typescript": "*"
+	
+  },
   "babel": {
     "presets": [
       "es2015"

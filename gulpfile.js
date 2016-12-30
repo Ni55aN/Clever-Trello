@@ -6,7 +6,7 @@ var nested = require('postcss-nested');
 var sugarss = require('sugarss');
 var rename = require('gulp-rename');
 var jade = require('gulp-jade');
-var imageop = require('gulp-image-optimization');
+var imagemin = require('gulp-imagemin');
 var cssnano = require('gulp-cssnano');
 var concat = require('gulp-concat');
 const eslint = require('gulp-eslint');
@@ -81,11 +81,9 @@ gulp.task(VIEW_TASK, function() {
 
 gulp.task(IMAGE_TASK, function() {
 
-    return gulp.src("./assets/icons/**").pipe(imageop({
-        optimizationLevel: 5,
-        progressive: true,
-        interlaced: true
-    })).pipe(gulp.dest("dist/icons"));
+    return gulp.src("./assets/icons/**")
+			.pipe(imagemin())
+			.pipe(gulp.dest("dist/icons"));
 
 });
 
